@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hactoberfest 2022</title>
+</head>
+<body>
+    <header>
+    <h1>Spooky Algorythms</h1>
+    </header>
+    <h2>Ensabanor15,Valid Anagram(LeetCode Problem)</h2>
+    <p> Python3 </p>
+    <p>This code wants you to to take a string and check if it is an Anagram which is when a word/phrase is made using the same letters as a diffrent
+      word or phase. The solution is gotten using if statements, lists, and sort methods to be solved.
+    </p>
+    <pre><code>
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        # puts the variables into list form so that the characters can be moved around
+        s = list(s)
+        t = list(t)
+        # sorts the list into alphabetical orders so they can be compared
+        s.sort()
+        t.sort()
+        #checks if they are equal to each other and if they are then they
+        if s == t:
+            return True
+            print ("true")
+        else:
+            return False
+            print ("false")
+    </code></pre>
+</body>
+</html>
